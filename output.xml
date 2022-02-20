@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.7.5 on win32)" generated="20220220 15:08:08.273" rpa="true" schemaversion="2">
+<suite id="s1" name="Tasks" source="c:\Robocorp\level2robo\tasks.robot">
+<test id="s1-t1" name="Order robots from RobotSpareBin Industries Inc">
+<kw name="Open the robot order website">
+<kw name="Open Available Browser" library="RPA.Browser.Selenium">
+<arg>https://robotsparebinindustries.com/#/robot-order</arg>
+<doc>Attempts to open a browser on the user's device from a set of
+supported browsers. Automatically downloads a corresponding webdriver
+if none is already installed.</doc>
+<msg timestamp="20220220 15:08:10.754" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg timestamp="20220220 15:08:10.783" level="INFO">Created download root directory: C:\Users\SHAHARIN\AppData\Local\robocorp\webdrivers</msg>
+<msg timestamp="20220220 15:08:10.783" level="INFO">Created symlink directory: C:\Users\SHAHARIN\AppData\Local\robocorp\webdrivers</msg>
+<msg timestamp="20220220 15:08:10.783" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg timestamp="20220220 15:08:11.933" level="INFO">Created Chrome browser with arguments: --disable-dev-shm-usage --disable-web-security --allow-running-insecure-content --no-sandbox</msg>
+<msg timestamp="20220220 15:08:11.935" level="INFO" html="true">&lt;p&gt;Attempted combinations:&lt;/p&gt;&lt;div class="doc"&gt;&lt;table&gt;&lt;tr&gt;&lt;th&gt;Browser&lt;/th&gt;&lt;th&gt;Download&lt;/th&gt;&lt;th&gt;Error&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Chrome&lt;/td&gt;&lt;td&gt;False&lt;/td&gt;&lt;td&gt;Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Chrome&lt;/td&gt;&lt;td&gt;True&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;</msg>
+<msg timestamp="20220220 15:08:11.935" level="INFO">Opening url 'https://robotsparebinindustries.com/#/robot-order'</msg>
+<status status="PASS" starttime="20220220 15:08:10.746" endtime="20220220 15:08:12.634"/>
+</kw>
+<kw name="Maximize Browser Window" library="RPA.Browser.Selenium">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220220 15:08:12.634" endtime="20220220 15:08:12.771"/>
+</kw>
+<status status="PASS" starttime="20220220 15:08:10.746" endtime="20220220 15:08:12.771"/>
+</kw>
+<status status="PASS" starttime="20220220 15:08:10.737" endtime="20220220 15:08:12.779"/>
+</test>
+<doc>Orders robots from RobotSpareBin Industries Inc.
+Saves the order HTML receipt as a PDF file.
+Saves the screenshot of the ordered robot.
+Embeds the screenshot of the robot to the PDF receipt.
+Creates ZIP archive of the receipts and the images.</doc>
+<status status="PASS" starttime="20220220 15:08:08.281" endtime="20220220 15:08:12.787"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tasks">Tasks</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20220220 15:08:10.675" level="WARN">This is a deprecated import that will be removed in favor of RPA.Robocorp.Vault</msg>
+</errors>
+</robot>
